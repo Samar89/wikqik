@@ -1,0 +1,105 @@
+.navbar {
+  background-color: #1d2834;
+}
+.navbar .navbar-toggler {
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.navbar .navbar-collapse {
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  background: #fff;
+  left: -300px;
+  z-index: 1000;
+  padding-top: 40px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.navbar .navbar-collapse.show {
+  left: 0px;
+}
+.navbar .navbar-collapse .close-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.navbar .navbar-collapse .close-menu:hover {
+  color: #ff0000;
+}
+.navbar .navbar-collapse .nav-item {
+  padding: 0 10px;
+}
+.navbar .navbar-collapse .nav-item .nav-link:hover {
+  color: #1d2834;
+  text-decoration: underline;
+}
+.navbar .form-inline {
+  width: calc( 100% - 300px);
+}
+@media only screen and (max-width: 767px) {
+  .navbar .form-inline {
+    width: 100%;
+  }
+}
+.navbar .form-inline .filter-button {
+  background-color: #ff9901;
+  border: none;
+  color: #000;
+  border-radius: 0;
+  height: 38px;
+}
+.navbar .form-inline .form-control.search-text {
+  width: calc(60% - 30px);
+  border-radius: 0;
+}
+@media only screen and (max-width: 767px) {
+  .navbar .form-inline .form-control.search-text {
+    width: calc(100% - 50px);
+    margin-right: 10px;
+  }
+}
+.navbar .form-inline .form-control.locations {
+  width: calc(40% - 30px);
+  border-radius: 0;
+}
+.navbar .form-inline .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 153, 1, 0.25);
+}
+
+.main-link {
+  color: #fff;
+  margin: 0 10px;
+}
+.main-link:hover {
+  color: #ff9901;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 767px) {
+  .main-link.app-job {
+    display: none;
+  }
+}
+
+.window-overlay {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.window-overlay.show {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.75;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+/*# sourceMappingURL=style.css.map */
